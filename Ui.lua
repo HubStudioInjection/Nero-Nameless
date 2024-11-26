@@ -9,7 +9,7 @@ local Utility = {}
 local Objects = {}
 function Kavo:DraggingEnabled(frame, parent)
         
-    parent = parent or frame
+   d parent = parent or frame
     
     -- stolen from wally or kiriot, kek
     local dragging = false
@@ -294,7 +294,7 @@ Corner.Parent = Toggle
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
         wait(1)
-        game:GetService("CoreGui")["244921"].Main.Visible = false
+        ScreenGui:Destroy()
 		end)
 
     function Kavo:ChangeColor(prope,color)
