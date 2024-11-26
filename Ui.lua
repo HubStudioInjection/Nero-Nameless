@@ -9,7 +9,7 @@ local Utility = {}
 local Objects = {}
 function Kavo:DraggingEnabled(frame, parent)
         
-   d parent = parent or frame
+   parent = parent or frame
     
     -- stolen from wally or kiriot, kek
     local dragging = false
