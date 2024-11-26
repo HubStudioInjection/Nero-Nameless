@@ -71,11 +71,11 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(224, 224, 224)
     },
     BloodTheme = {
-        SchemeColor = Color3.fromRGB(255, 0, 0),
+        SchemeColor = Color3.fromRGB(227, 47, 34),
         Background = Color3.fromRGB(0, 0, 0),
         Header = Color3.fromRGB(0, 0, 0),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(0, 0, 0)
+        ElementColor = Color3.fromRGB(21, 21, 21)
     },
     GrapeTheme = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
