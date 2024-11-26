@@ -295,8 +295,7 @@ Corner.Parent = Toggle
 		}):Play()
         wait(1)
         ScreenGui:Destroy()
-		end)
-
+    end)
     function Kavo:ChangeColor(prope,color)
         if prope == "Background" then
             themeList.Background = color
