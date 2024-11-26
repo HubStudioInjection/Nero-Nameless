@@ -294,69 +294,8 @@ Corner.Parent = Toggle
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
         wait(1)
-        ScreenGui:Destroy()
-    end)
-
-    MainSide.Name = "MainSide"
-    MainSide.Parent = Main
-    MainSide.BackgroundColor3 = themeList.Header
-    Objects[MainSide] = "Header"
-    MainSide.Position = UDim2.new(-7.4505806e-09, 0, 0.0911949649, 0)
-    MainSide.Size = UDim2.new(0, 149, 0, 289)
-
-    sideCorner.CornerRadius = UDim.new(0, 4)
-    sideCorner.Name = "sideCorner"
-    sideCorner.Parent = MainSide
-
-    coverup_2.Name = "coverup"
-    coverup_2.Parent = MainSide
-    coverup_2.BackgroundColor3 = themeList.Header
-    Objects[coverup_2] = "Header"
-    coverup_2.BorderSizePixel = 0
-    coverup_2.Position = UDim2.new(0.949939311, 0, 0, 0)
-    coverup_2.Size = UDim2.new(0, 7, 0, 289)
-
-    tabFrames.Name = "tabFrames"
-    tabFrames.Parent = MainSide
-    tabFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    tabFrames.BackgroundTransparency = 1.000
-    tabFrames.Position = UDim2.new(0.0438990258, 0, -0.00066378375, 0)
-    tabFrames.Size = UDim2.new(0, 135, 0, 283)
-
-    tabListing.Name = "tabListing"
-    tabListing.Parent = tabFrames
-    tabListing.SortOrder = Enum.SortOrder.LayoutOrder
-
-    pages.Name = "pages"
-    pages.Parent = Main
-    pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    pages.BackgroundTransparency = 1.000
-    pages.BorderSizePixel = 0
-    pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
-    pages.Size = UDim2.new(0, 360, 0, 269)
-
-    Pages.Name = "Pages"
-    Pages.Parent = pages
-
-    infoContainer.Name = "infoContainer"
-    infoContainer.Parent = Main
-    infoContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    infoContainer.BackgroundTransparency = 1.000
-    infoContainer.BorderColor3 = Color3.fromRGB(27, 42, 53)
-    infoContainer.ClipsDescendants = true
-    infoContainer.Position = UDim2.new(0.299047619, 0, 0.874213815, 0)
-    infoContainer.Size = UDim2.new(0, 368, 0, 33)
-
-    
-    coroutine.wrap(function()
-        while wait() do
-            Main.BackgroundColor3 = themeList.Background
-            MainHeader.BackgroundColor3 = themeList.Header
-            MainSide.BackgroundColor3 = themeList.Header
-            coverup_2.BackgroundColor3 = themeList.Header
-            coverup.BackgroundColor3 = themeList.Header
-        end
-    end)()
+        game:GetService("CoreGui")["244921"].Main.Visible = false
+		end)
 
     function Kavo:ChangeColor(prope,color)
         if prope == "Background" then
